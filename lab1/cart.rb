@@ -3,6 +3,7 @@
 require './item_container.rb'
 
 class Cart
+  # Додаємо методи, реалізовані у модулі ItemContainer.
   include ItemContainer
 
   # Ініціалізує новий екземпляр класу "Cart".
