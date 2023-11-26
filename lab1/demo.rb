@@ -10,13 +10,15 @@
 require './Parser.rb'
 require './main_application.rb'
 require './cart.rb'
+require './engine.rb'
+require './my_application_reznikk.rb'
 
 # Задання шляху для зберігання даних та налаштувань фільтрації.
 data_storage_path = './files/'
 filter_settings = '' # Тут можна задати назву авто для фільтрації при парсингу, наприклад, 'BMW X5'.
 
 # Створення об'єкту "MainApplication" з вказаними налаштуваннями.
-app = MainApplication.new(data_storage_path, filter_settings)
+app = MyApplicationReznik::MainApplication.new(data_storage_path, filter_settings)
 
 # Задання URL-адреси веб-сторінки для парсингу.
 base_url = 'https://auto.ria.com/uk/search/?indexName=auto,order_auto,newauto_search&country.import.usa.not=-1&price.currency=1&abroad.not=0&custom.not=-1'
@@ -24,10 +26,10 @@ page_number = 1 # Задання номера сторінки для парси
 url = "#{base_url}&page=#{page_number}&size=10&scrollToAuto=35465937" # Складаємо посилання.
 
 # Створення об'єкту "Parser" для парсингу вказаної сторінки та передача налаштувань додатку (app).
-parser = Parser.new(url, app)
+parser = MyApplicationReznik::Parser.new(url, app)
 
 # Створення об'єкту "Cart" для зберігання та операцій з авто.
-cart = Cart.new(app)
+cart = MyApplicationReznik::Cart.new(app)
 
 # Парсинг веб-сторінки. Створення масиву авто.
 cars = parser.parse_items
@@ -46,3 +48,8 @@ cart.search_item('Volkswagen')
 cart.save_to_file('test.txt')
 cart.save_to_json('test.json')
 cart.save_to_csv('test.csv')
+cart.save_to_yml('test.yml')
+
+engine_instance = MyApplicationReznik::Engine.new()
+my_app_instance = MyApplicationReznik::MyApplicationReznikk.instance
+engine_instance.run_application(app, my_app_instance)

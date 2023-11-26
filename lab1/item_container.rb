@@ -1,5 +1,7 @@
 # Модуль "ItemContainer" надає функціональність для керування колекцією авто.
 
+module MyApplicationReznik
+
 module ItemContainer
 
     # Модуль "ClassMethods" містить методи класу, які можуть бути викликані на рівні класу, а не на рівні екземпляру.
@@ -61,6 +63,13 @@ module ItemContainer
         puts "All Items:"
         @items.each { |item| puts item }
       end
+
+      # Реалізує метод each для підтримки Enumerable mixin.
+      #
+      # @yield [item] Блок коду, який буде викликатися для кожного елементу колекції.
+      def each(&block)
+        @items.each(&block)
+      end
     end
   
     # Метод "self.included" викликається, коли модуль "ItemContainer" включений до класу.
@@ -69,6 +78,7 @@ module ItemContainer
     def self.included(class_instance)
       class_instance.include(ClassMethods)
       class_instance.include(InstanceMethods)
+      class_instance.include(Enumerable)
     end
   end
-  
+end

@@ -1,5 +1,6 @@
 # "MainApplication" представляє головний клас із налаштуваннями для зберігання та фільтрації даних.
 
+module MyApplicationReznik
 # Усі необхідні бібліотеки, які використовуються у програмі
 require 'nokogiri'
 require 'open-uri'
@@ -18,4 +19,6 @@ class MainApplication
     @data_storage_path = data_storage_path
     @filter_settings = filter_settings
   end
+end
+
 end

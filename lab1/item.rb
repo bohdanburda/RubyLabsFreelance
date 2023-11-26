@@ -1,9 +1,24 @@
 # Клас "Item" представляє авто з параметрами: назва, рік, характеристики та ціна.
+module MyApplicationReznik
 
 class Item
+    include Comparable
+
     # Поля класу.
     attr_accessor :name, :year, :characteristics, :price
   
+    # Динамічні атрибути
+    def self.define_dynamic_attributes(field_names)
+      field_names.each do |field_name|
+        define_method(field_name) do
+          instance_variable_get("@#{field_name}")
+        end
+        define_method("#{field_name}=") do |value|
+          instance_variable_set("@#{field_name}", value)
+        end
+      end
+    end
+
     # Ініціалізує нове авто із заданими параметрами.
     #
     # @param name [String] Назва авто.
@@ -46,5 +61,14 @@ class Item
         price: @price
       }
     end
+
+    # Реалізує метод порівняння (<=>) для об'єктів класу. Порівнює об'єкти на основі їхніх імен.
+    #
+    # @return [Integer] Якщо self менше other, повертає -1; якщо рівні, повертає 0;
+    #   якщо self більше other, повертає 1.
+    def <=>(other)
+      self.name <=> other.name
+    end
   end
   
+end

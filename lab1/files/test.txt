@@ -1,10 +1,10 @@
-Name:  Volkswagen Passat , Year:  Volkswagen Passat , Characteristics:    B8   • 2.0 BiTDI DSG (240 к.с.) 4Motion   • Highline   , Price: $ 28 000 
-Name:  Volkswagen ID.4 , Year:  Volkswagen ID.4 , Characteristics:    I покоління     , Price: $ 27 500 
-Name:  Volkswagen ID.4 Crozz , Year:  Volkswagen ID.4 Crozz , Characteristics:    I покоління   • 84.8 kWh (306 к.с.) 4Motion   • Prime   , Price: $ 38 900 
-Name:  Volkswagen ID.4 Crozz , Year:  Volkswagen ID.4 Crozz , Characteristics:    I покоління   • 84.8 kWh (204 к.с.)   • Pro   , Price: $ 29 500 
-Name:  Volkswagen ID.4 Crozz , Year:  Volkswagen ID.4 Crozz , Characteristics:    I покоління   • 84.8 kWh (306 к.с.) 4Motion   • Prime   , Price: $ 38 900 
-Name:  Nissan Teana , Year:  Nissan Teana , Characteristics:   , Price: $ 7 800 
-Name:  Volkswagen ID.4 Crozz , Year:  Volkswagen ID.4 Crozz , Characteristics:    I покоління   • 84.8 kWh (204 к.с.)   • Pro   , Price: $ 29 500 
-Name:  Volkswagen ID.4 Crozz , Year:  Volkswagen ID.4 Crozz , Characteristics:    I покоління   • 84.8 kWh (204 к.с.)    , Price: $ 29 970 
-Name:  Volkswagen ID.4 Crozz , Year:  Volkswagen ID.4 Crozz , Characteristics:    I покоління   • 84.8 kWh (204 к.с.)   • Pro   , Price: $ 29 500 
-Name:  Audi A6 , Year:  Audi A6 , Characteristics:    C8   • 50 TDI Tiptronic (286 к.с.) Quattro   • S-line   , Price: $ 58 900 
+Name:  BMW X5 , Year:  BMW X5 , Characteristics:    F15   • 30d Steptronic (258 к.с.) xDrive    , Price: $ 36 500 
+Name:  Mazda 3 , Year:  Mazda 3 , Characteristics:    IV покоління/BP    • Style   , Price: $ 18 500 
+Name:  BMW X5 , Year:  BMW X5 , Characteristics:    G05 (FL)   • M60i MHEV Steptronic (530 к.с.) xDrive   • M Package   , Price: $ 158 000 
+Name:  Mercedes-Benz S-Class , Year:  Mercedes-Benz S-Class , Characteristics:    W222   • AMG 63 Long G-tronic (585 к.с.) 4Matic   • Base   , Price: $ 57 777 
+Name:  Volkswagen Passat Alltrack , Year:  Volkswagen Passat Alltrack , Characteristics:    VIII покоління/B8   • 2.0TDI DSG (190 к.с.) 4Motion   • Base   , Price: $ 24 200 
+Name:  Mercedes-Benz E-Class , Year:  Mercedes-Benz E-Class , Characteristics:    W213     , Price: $ 36 300 
+Name:  Volkswagen Passat Alltrack , Year:  Volkswagen Passat Alltrack , Characteristics:    VIII покоління/B8 (FL)   • 2.0TDI 7-DSG (190 к.с.) 4Motion   • Base   , Price: $ 29 900 
+Name:  Mitsubishi Outlander , Year:  Mitsubishi Outlander , Characteristics:    III покоління   • 2.0h AT (200 к.с.) PHEV 4WD   • Base   , Price: $ 15 600 
+Name:  Mercedes-Benz Sprinter , Year:  Mercedes-Benz Sprinter , Characteristics:   , Price: $ 21 500 
+Name:  Nissan Qashqai , Year:  Nissan Qashqai , Characteristics:    II покоління (FL)     , Price: $ 23 800 

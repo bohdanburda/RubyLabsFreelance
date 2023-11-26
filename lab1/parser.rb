@@ -1,6 +1,9 @@
 # Клас "Parser" відповідає за парсинг інформації з веб-сторінок.
 
+module MyApplicationReznik
+
 require './item.rb'
+require 'mechanize'
 
 class Parser
   # Ініціалізує новий екземпляр класу "Parser" з вказаною URL та налаштуваннями додатку.
@@ -8,8 +11,8 @@ class Parser
   # @param url [String] URL-адреса веб-сторінки для парсингу.
   # @param app [MainApplication] Посилання на головний додаток для отримання налаштувань фільтрації.
   def initialize(url, app)
-    html = URI.open(url)
-    @doc = Nokogiri::HTML(html)
+    agent = Mechanize.new
+    @doc = agent.get(url)
     @condition = app.filter_settings
   end
 
@@ -49,4 +52,6 @@ class Parser
     cars
   end
   
+end
+
 end
