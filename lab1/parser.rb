@@ -34,8 +34,9 @@ class Parser
       # Перевірка, чи назва автомобіля відповідає умовам фільтрації, використовуючи регулярний вираз.
       if Regexp.new(@condition, Regexp::IGNORECASE).match(car_name)
         # Отримання року виробництва автомобіля.
-        car_year = content.css('a > span').text
-  
+        year = content.css('a').text.match(/(\d{4})/)
+        car_year = year ? year[1].to_s : "No match found"
+        
         # Отримання характеристик автомобіля.
         car_characteristics = content.css('div.generation').text
   
